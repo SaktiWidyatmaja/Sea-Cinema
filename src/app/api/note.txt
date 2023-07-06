@@ -1,0 +1,20 @@
+perlu api
+get, post berdasarkan time+movieId
+delete, time+movie+seatNumber (token)
+
+
+---
+token untuk SeatBook
+movie-time-seatNumber biasa
+
+token untuk History
+movie-time-seatNumber terkecil
+
+
+mekanisme hapus: 
+hapus dari token history
+di handler delete history, 
+nanti di history model ada array seatNumber
+dari array seatNumber nya nanti diiterasi
+lalu di-delete satu per satu seat numbernya
+dari seatBook table
